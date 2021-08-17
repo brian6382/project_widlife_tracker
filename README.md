@@ -39,7 +39,7 @@ If you come across any problems you can reach me at: briankulei98@gmail.com
 
 ### License
 *This project is licensed under the terms of the MIT license.*
-Copyright (c) 2020 **Brian Kulei**fgfggfg
+Copyright (c) 2020 **Brian Kulei**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
