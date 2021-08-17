@@ -7,4 +7,4 @@ public class DB {
     // credentials so they  will not work for you
 
     public static Sql2o sql2o = new Sql2o( "jdbc:postgresql://ec2-34-228-100-83.compute-1.amazonaws.com:5432/d5a4sco00hbvck", "qlvxmmgocjivur", "53a0922d06fc6be8e5f1aa6ed5188dce2e8fed73b58fe021ad4e8a9d36ab578a");
-}dd
+}
