@@ -82,4 +82,4 @@ public class AnimalsTest {
     private Animals setUpNewAnimal() {
         return new Animals("Antelope","normal");
     }
-}
+}aa
