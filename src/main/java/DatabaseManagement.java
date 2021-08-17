@@ -5,6 +5,6 @@ public interface DatabaseManagement {
     void delete();
 
 
-    void update(int id,String type);
+//    void update(int id,String type);
 
 }
