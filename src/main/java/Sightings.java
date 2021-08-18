@@ -1,4 +1,4 @@
-import org.sql2o.Connection;
+import org.sql2o.*;
 import org.sql2o.Sql2oException;
 
 import java.sql.Timestamp;
@@ -120,14 +120,16 @@ public class Sightings {
 
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Sightings sightings = (Sightings) o;
-        return id == sightings.id &&
-                location_id == sightings.location_id &&
-                ranger_id == sightings.ranger_id &&
-                animal_id == sightings.animal_id;
+    public  boolean equals(Object anotherSightings){
+        if(!(anotherSightings instanceof Sightings)){
+            return  false;
+        }else {
+            Sightings newSightings = (Sightings) anotherSightings;
+            return this.getAnimal_id() == (newSightings.getAnimal_id())&&
+                    this.getLocation_id() == newSightings.getLocation_id()&&
+                    this.getRanger_id() == newSightings.getRanger_id();
+
+        }
     }
 
     @Override

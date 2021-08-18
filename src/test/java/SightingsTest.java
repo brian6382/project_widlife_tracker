@@ -15,6 +15,32 @@ public class SightingsTest {
         Sightings sighting= setUpNewSighting();
         assertEquals(true,sighting instanceof Sightings);
     }
+    @Test
+    public void Sightings_instantiatesWithAnimalId_int() {
+        Sightings testSightings = new Sightings(1,1,1);
+        assertEquals(1, testSightings.getAnimal_id());
+    }
+
+    @Test
+    public void Sightings_instantiatesWithLocationId_int() {
+        Sightings testAnimals = new Sightings(1,1,1);
+        assertEquals(1, testAnimals.getLocation_id());
+    }
+
+    @Test
+    public void Sightings_instantiatesWithRangerId_int() {
+        Sightings testAnimals = new Sightings(1,1,1);
+        assertEquals(1, testAnimals.getRanger_id());
+    }
+
+    @Test
+    public  void equals_returnsTrueIfNameHealthTypeAndAgeAreSame_true(){
+        Sightings testSightings = new Sightings(1,1,1);
+        Sightings anotherSightings = new Sightings(1,1,1);
+        assertTrue(testSightings.equals(anotherSightings));
+    }
+
+
 
     @Test
     public void allInstancesAreSaved() {

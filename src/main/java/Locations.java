@@ -1,6 +1,6 @@
-import org.sql2o.Connection;
-import org.sql2o.Sql2oException;
 
+import org.sql2o.Sql2oException;
+import org.sql2o.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

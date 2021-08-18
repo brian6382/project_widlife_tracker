@@ -1,6 +1,6 @@
 import org.junit.Rule;
 import org.junit.Test;
-
+import org.sql2o.*;
 import java.util.List;
 
 import static org.junit.Assert.*;
